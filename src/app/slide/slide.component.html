@@ -1,0 +1,49 @@
+<div class="row justify-content-center m-5">
+    <button class="btn btn-secondary" (click)="startNewGame()">New Game</button>
+</div>
+<div class="row justify-content-center">
+  <div style="width:400px; height:400px;" class="justify-content-center m-0 bg-light">
+    <div *ngFor="let v of store; let i=index" (click)="findMoves(i)" [@itemState]="state[i]" class="item">
+        <p class="text-center">{{v}}</p>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row justify-content-center">
+  <div style="width:400px; height:400px;" class="justify-content-center m-0 bg-light">
+    <div  (click)="findMoves(0)" [@itemState]="state[0]" class="item">
+      <p class="text-center">{{store[0]}}</p>
+    </div><div  (click)="findMoves(1)" [@itemState]="state[1]" class="item">
+      <p class="text-center">{{store[1]}}</p>
+    </div><div  (click)="findMoves(2)" [@itemState]="state[2]" class="item">
+      <p class="text-center">{{store[2]}}</p>
+    </div><div  (click)="findMoves(3)" [@itemState]="state[3]" class="item">
+      <p class="text-center">{{store[3]}}</p>
+    </div><div  (click)="findMoves(4)" [@itemState]="state[4]" class="item">
+      <p class="text-center">{{store[4]}}</p>
+    </div><div  (click)="findMoves(5)" [@itemState]="state[5]" class="item">
+      <p class="text-center">{{store[5]}}</p>
+    </div><div  (click)="findMoves(6)" [@itemState]="state[6]" class="item">
+      <p class="text-center">{{store[6]}}</p>
+    </div><div  (click)="findMoves(7)" [@itemState]="state[7]" class="item">
+      <p class="text-center">{{store[7]}}</p>
+    </div><div  (click)="findMoves(8)" [@itemState]="state[8]" class="item">
+      <p class="text-center">{{store[8]}}</p>
+    </div><div  (click)="findMoves(9)" [@itemState]="state[9]" class="item">
+      <p class="text-center">{{store[9]}}</p>
+    </div><div  (click)="findMoves(10)" [@itemState]="state[10]" class="item">
+      <p class="text-center">{{store[10]}}</p>
+    </div><div  (click)="findMoves(11)" [@itemState]="state[11]" class="item">
+      <p class="text-center">{{store[11]}}</p>
+    </div><div  (click)="findMoves(12)" [@itemState]="state[12]" class="item">
+      <p class="text-center">{{store[12]}}</p>
+    </div><div  (click)="findMoves(13)" [@itemState]="state[13]" class="item">
+      <p class="text-center">{{store[13]}}</p>
+    </div><div  (click)="findMoves(14)" [@itemState]="state[14]" class="item">
+      <p class="text-center">{{store[14]}}</p>
+    </div><div  (click)="findMoves(15)" [@itemState]="state[15]" class="item">
+      <p class="text-center">{{store[15]}}</p>
+    </div>
+  </div>
+</div>
+
